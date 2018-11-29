@@ -1,0 +1,18 @@
+{
+  "name": "mcw-bp-gutenberg-block",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cgb-scripts start",
+    "build": "cgb-scripts build",
+    "eject": "cgb-scripts eject"
+  },
+  "dependencies": {
+    "cgb-scripts": "1.11.0",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "rc-datetime-picker": "^1.6.1",
+    "react-select": "^2.1.2"
+  }
+}

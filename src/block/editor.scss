@@ -1,0 +1,31 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-mcw-bp-guten-innerblock  {
+  border: 1px solid $gray;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -$blockListBlockPadding;
+  margin-right: -$blockListBlockPadding;
+  padding: 0 $blockListBlockPadding;
+}
+
+.wp-block-mcw-bp-guten-desc{
+  border: none;
+  padding: 5px 15px;
+  background: $green;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.wp-block-mcw-bp-guten-title {
+  margin-bottom: 4px;
+  display: block;
+  vertical-align: middle;
+}
