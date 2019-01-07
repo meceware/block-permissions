@@ -5,7 +5,7 @@
  * Description: Show or hide Gutenberg content blocks depending on their user attributes such as user role, log in information, user names, devices, date/time, day of week and custom functionality.
  * Author: Mehmet Celik
  * Author URI: http://www.meceware.com/
- * Version: 1.0.1
+ * Version: 1.0.2 Beta
  * Text Domain: mcw_bp_gutenberg
  */
 
