@@ -11,6 +11,7 @@ dirPlugin = "mcw-bp-gutenberg"
 dirPluginFolders = [
   "dist",
   "lib",
+  "Licensing",
 ]
 
 dirPluginFiles = [
