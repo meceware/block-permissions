@@ -25,7 +25,7 @@ class McwBPUserRolesController extends WP_REST_Controller {
 
   public function get_items_permissions_check( $request ) {
     if ( ! current_user_can( 'edit_posts' ) ) {
-      return new WP_Error( 'mcw_bp_gutenberg_cannot_read', __( 'Sorry, you do not have the necessary privilege to complete the task.', $this->tag ), array(
+      return new WP_Error( 'mcw_bp_gutenberg_cannot_read', esc_html ( __( 'Sorry, you do not have the necessary privilege to complete the task.', $this->tag ) ), array(
         'status' => rest_authorization_required_code(),
       ) );
     }
