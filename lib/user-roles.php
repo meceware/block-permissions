@@ -33,10 +33,10 @@ class McwBPUserRolesController extends WP_REST_Controller {
   }
 
   public function get_items( $request ) {
-		// Wordpress roles
+		// WordPress roles
 		global $wp_roles;
 
-		// Check if wordpress roles are set
+		// Check if WordPress roles are set
 		if ( !isset( $wp_roles ) ){
 			$wp_roles = new WP_Roles();
 		}
