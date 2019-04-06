@@ -12,13 +12,13 @@ dirPlugin = 'mcw-bp-gutenberg'
 dirPluginFolders = [
   'dist',
   'lib',
-  'Licensing',
 ]
 
 dirPluginFiles = [
   'index.php',
   'mcw-bp-gutenberg.php',
-  'README'
+  'README.md',
+  'readme.txt',
 ]
 
 def getVersion( fileName ):
