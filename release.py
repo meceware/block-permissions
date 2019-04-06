@@ -29,10 +29,6 @@ def getVersion( fileName ):
         return matches.group( 1 )
   return ''
 
-# Check if the release folder is present, remove it if necessary
-if os.path.isdir( dirRelease ):
-  shutil.rmtree( dirRelease )
-
 version = getVersion( 'mcw-bp-gutenberg.php' )
 
 # Build the code
