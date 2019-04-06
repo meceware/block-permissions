@@ -60,7 +60,7 @@ for path, folders, files in os.walk( dirReleasePlugin, topdown = True ):
       shutil.copyfile( 'index.php', os.path.join( path, folder, 'index.php' ) )
 
 # Create the zip file
-shutil.make_archive( os.path.join( dirRelease, dirPlugin + ( ( '-' + version.replace( ' ', '-' ) ) if version else '' ) ), 'zip', dirRelease, dirPlugin )
+shutil.make_archive( os.path.join( dirRelease, dirPlugin + ( ( '-v' + version.replace( ' ', '-' ) ) if version else '' ) ), 'zip', dirRelease, dirPlugin )
 
 # Remove the release directory
 shutil.rmtree( dirReleasePlugin )
