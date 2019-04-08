@@ -1,4 +1,4 @@
-=== Block Permissions for Gutenberg ===
+=== Block Permissions ===
 Contributors: meceware
 Donate link: https://www.meceware.com/
 Tags: addon, blocks, content restriction, date, gutenberg, member, permission, privacy, private content, time range, user role
@@ -22,7 +22,7 @@ https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/
 Please check the [documentation](https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/#how-to-install) for how to install.
 
 == How To Use ==
-* Activate 'Block Permissions for Gutenberg' plugin.
+* Activate 'Block Permissions' plugin.
 * Edit any page with Gutenberg editor.
 * If Block Permission is chosen for 'Show', the block content will be shown if the settings are validated. Otherwise block content will be hidden.
 

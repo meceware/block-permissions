@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Block Permissions for Gutenberg
+ * Plugin Name: Block Permissions
  * Plugin URI: https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/
  * Description: Show or hide Gutenberg content blocks depending on their user attributes such as user role, log in information, user names, devices, date/time, day of week and custom functionality.
  * Author: Mehmet Celik

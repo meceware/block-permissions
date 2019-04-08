@@ -1,4 +1,4 @@
-# Block Permissions for Gutenberg
+# Block Permissions
 
 Show Gutenberg blocks only to target audience depending on their user attributes such as user role, log in information and user names.
 
@@ -7,7 +7,7 @@ For documentation, please check:
 https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/
 
 ## How To Use:
-* Activate 'Block Permissions for Gutenberg' plugin.
+* Activate 'Block Permissions' plugin.
 * Edit any page with Gutenberg editor.
 * If Block Permission is chosen for 'Show', the block content will be shown if the settings are validated. Otherwise block content will be hidden.
 

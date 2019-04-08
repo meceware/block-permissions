@@ -23,7 +23,7 @@ function UsersSelect( props ) {
 		if ( input && input.length > 1 ) {
 			apiFetch( { path: wp.url.addQueryArgs( "/meceware/block-permissions/v1/users?user=" + encodeURIComponent(input) ) } ).then( users => {
 				callback( setUsers(users) );
-			} ).catch( err => { console.log('ERROR! Block Permissions for Gutenberg: Users not loaded!'); console.log(err); } );
+			} ).catch( err => { console.log('ERROR! Block Permissions: Users not loaded!'); console.log(err); } );
 		} else {
 			callback( setUsers( [] ) );
 		}
