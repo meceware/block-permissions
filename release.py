@@ -19,6 +19,7 @@ dirPluginFiles = [
   'mcw-bp-gutenberg.php',
   'README.md',
   'readme.txt',
+  'LICENSE',
 ]
 
 def getVersion( fileName ):

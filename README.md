@@ -51,6 +51,14 @@ https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/
 
 * If 'PHP Function' is selected as the permission, the block content will be hidden according to the return value of the specified PHP function.
 
+## Build
+
+Run `npm install` to install the npm dependencies.
+
+For development, run `npm start`.
+
+To get the release version, run `py .\release.py`. (Python v3.x is required.)
+
 ## License
 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) or later
 
