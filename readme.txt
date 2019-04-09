@@ -9,17 +9,11 @@ Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Show Gutenberg blocks only to target audience depending on their user attributes such as user role, log in information and user names.
+Show Gutenberg editor blocks only to target audience depending on their user attributes such as user role, log in information and user names.
 
 == Description ==
 
-For documentation, please check:
-
-https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/
-
-== Installation ==
-
-Please check the [documentation](https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/#how-to-install) for how to install.
+[Full Documentation](https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/)
 
 == How To Use ==
 * Activate 'Block Permissions' plugin.
@@ -72,9 +66,7 @@ No FAQ yet.
 
 == Screenshots ==
 
-Please check the documentation web site for all the screenshots.
-
-https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/
+Please check the [documentation](https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/) web site for all the screenshots.
 
 == Changelog ==
 
