@@ -1,4 +1,4 @@
-import AsyncSelect from "react-select/lib/Async";
+import AsyncSelect from 'react-select/async';
 import debounce from 'lodash/debounce';
 
 const { __ } = wp.i18n;

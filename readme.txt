@@ -1,11 +1,11 @@
 === Block Permissions ===
 Contributors: meceware
-Donate link: https://www.meceware.com/
+Donate link: https://www.meceware.com/plugins/
 Tags: addon, blocks, content restriction, date, gutenberg, member, permission, privacy, private content, time range, user role
 Requires at least: 5.0.0
-Tested up to: 5.1.1
+Tested up to: 5.2.1
 Requires PHP: 5.6
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -70,6 +70,9 @@ Please check the [documentation](https://www.meceware.com/plugins/docs/block-per
 
 == Changelog ==
 
+= 1.0.4 =
+* Package update and minor improvements.
+
 = 1.0.3 =
 * License change and other improvements.
 
@@ -84,6 +87,9 @@ Please check the [documentation](https://www.meceware.com/plugins/docs/block-per
 * Initial Release.
 
 == Upgrade Notice ==
+
+= 1.0.4 =
+Package updates and minor improvements.
 
 = 1.0.3 =
 Added to WordPress.
