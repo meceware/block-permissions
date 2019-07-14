@@ -45,7 +45,7 @@
 		"eol-last": "error",
 		"eqeqeq": "error",
 		"func-call-spacing": "error",
-		"indent": ["error", "tab", { "SwitchCase": 1 }],
+		"indent": ["error", 2, { "SwitchCase": 1 }],
 		"jsx-a11y/label-has-for": [
 			"error",
 			{
@@ -55,7 +55,7 @@
 		"jsx-a11y/media-has-caption": "off",
 		"jsx-a11y/no-noninteractive-tabindex": "off",
 		"jsx-a11y/role-has-required-aria-props": "off",
-		"jsx-quotes": "error",
+		"jsx-quotes": ["error", "prefer-single"],
 		"key-spacing": "error",
 		"keyword-spacing": "error",
 		"lines-around-comment": "off",
@@ -162,9 +162,9 @@
 				"children": true
 			}
 		],
-		"react/jsx-equals-spacing": "error",
-		"react/jsx-indent": ["error", "tab"],
-		"react/jsx-indent-props": ["error", "tab"],
+		"react/jsx-equals-spacing": ["error", "always"],
+		"react/jsx-indent": ["error", 2],
+		"react/jsx-indent-props": ["error", 2],
 		"react/jsx-key": "error",
 		"react/jsx-tag-spacing": "error",
 		"react/no-children-prop": "off",
@@ -187,6 +187,7 @@
 		"template-curly-spacing": ["error", "always"],
 		"valid-jsdoc": ["error", { "requireReturn": false }],
 		"valid-typeof": "error",
-		"yoda": "off"
+		"yoda": "off",
+		"linebreak-style": ["error", "windows"]
 	}
 }
