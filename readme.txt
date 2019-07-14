@@ -70,6 +70,9 @@ Please check the [documentation](https://www.meceware.com/plugins/docs/block-per
 
 == Changelog ==
 
+= 1.0.5 =
+* Package update and minor improvements.
+
 = 1.0.4 =
 * Package update and minor improvements.
 
@@ -87,6 +90,9 @@ Please check the [documentation](https://www.meceware.com/plugins/docs/block-per
 * Initial Release.
 
 == Upgrade Notice ==
+
+= 1.0.5 =
+Package update and minor improvements.
 
 = 1.0.4 =
 Package updates and minor improvements.
