@@ -4,71 +4,69 @@ const { __ } = wp.i18n;
 const { apiFetch } = wp;
 
 const {
-	registerStore,
-	withSelect,
+  registerStore,
+  withSelect,
 } = wp.data;
 
 const {
-	Spinner,
-	BaseControl,
+  Spinner,
+  BaseControl,
 } = wp.components;
 
 const actions = {
-	setUserRoles(userRoles) {
-		return {
-			type: 'SET_USER_ROLES',
-			userRoles,
-		};
-	},
+  setUserRoles( userRoles ) {
+    return {
+      type: 'SET_USER_ROLES',
+      userRoles,
+    };
+  },
 
-	fetchFromAPI(path) {
-		return {
-			type: 'FETCH_FROM_API',
-			path,
-		};
-	},
+  fetchFromAPI( path ) {
+    return {
+      type: 'FETCH_FROM_API',
+      path,
+    };
+  },
 };
 
-const store = registerStore( 'meceware/block-permissions-user-role-store', {
-	reducer( state = { userRoles: {} }, action ) {
+registerStore( 'meceware/block-permissions-user-role-store', {
+  reducer( state = { userRoles: {} }, action ) {
+    switch ( action.type ) {
+      case 'SET_USER_ROLES':
+        return {
+          ...state,
+          userRoles: action.userRoles,
+        };
+    }
 
-		switch ( action.type ) {
-			case 'SET_USER_ROLES':
-				return {
-					...state,
-					userRoles: action.userRoles,
-				};
-		}
+    return state;
+  },
 
-		return state;
-	},
+  actions,
 
-	actions,
+  selectors: {
+    getUserRoles( state ) {
+      const { userRoles } = state;
+      return userRoles;
+    },
+  },
 
-	selectors: {
-		getUserRoles( state ) {
-			const { userRoles } = state;
-			return userRoles;
-		},
-	},
+  controls: {
+    FETCH_FROM_API( action ) {
+      return apiFetch( { path: action.path } );
+    },
+  },
 
-	controls: {
-		FETCH_FROM_API( action ) {
-			return apiFetch( {path: action.path} );
-		},
-	},
+  resolvers: {
+    * getUserRoles() {
+      const userRoles = yield actions.fetchFromAPI( '/meceware/block-permissions/v1/user-roles' );
 
-	resolvers: {
-		* getUserRoles( state ) {
-			const userRoles = yield actions.fetchFromAPI( '/meceware/block-permissions/v1/user-roles' );
-
-			return actions.setUserRoles( userRoles );
-		},
-	},
+      return actions.setUserRoles( userRoles );
+    },
+  },
 } );
 
 function UserRoleSelect( props ) {
-
   const {
     className,
     name,
@@ -79,17 +77,17 @@ function UserRoleSelect( props ) {
 
   if ( ! userRoles.length ) {
     return (
-      <p className={ className } >
+      <p className = { className } >
         <Spinner />
         { __( 'Please wait while loading the user roles!', 'mcw-bp-gutenberg' ) }
       </p>
     );
-	}
+  }
 
-	let selectedRoles = [];
-	if ( null !== selected && selected ) {
-		selectedRoles = JSON.parse( selected );
-	}
+  let selectedRoles = [];
+  if ( null !== selected && selected ) {
+    selectedRoles = JSON.parse( selected );
+  }
 
   return (
     <BaseControl>
@@ -97,7 +95,7 @@ function UserRoleSelect( props ) {
         <Select
           className = { className }
           name = { name }
-          value= { selectedRoles }
+          value = { selectedRoles }
           onChange = { onChange }
           options = { userRoles }
           isMulti = 'true'
@@ -105,11 +103,11 @@ function UserRoleSelect( props ) {
         { __( 'Select user roles which this element will be visible to. Type Administrator, Editor, Author, Contributor, Subscriber or any other user role defined.', 'mcw-bp-gutenberg' ) }
       </label>
     </BaseControl>
-  )
+  );
 }
 
 export default withSelect( ( select ) => {
   return ( {
-    userRoles: select('meceware/block-permissions-user-role-store').getUserRoles(),
+    userRoles: select( 'meceware/block-permissions-user-role-store' ).getUserRoles(),
   } );
 } )( UserRoleSelect );

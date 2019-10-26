@@ -5,7 +5,7 @@
  * Description: Show or hide Gutenberg content blocks depending on their user attributes such as user role, log in information, user names, devices, date/time, day of week and custom functionality.
  * Author: Mehmet Celik
  * Author URI: https://www.meceware.com/
- * Version: 1.0.5
+ * Version: 1.0.6
  * Text Domain: mcw_bp_gutenberg
  */
 
@@ -29,7 +29,7 @@ if (!class_exists('Mobile_Detect_BP')) {
 
 class McwBPGutenberg {
 	// Plugin version
-	private $version = '1.0.5';
+	private $version = '1.0.6';
 	// Shortcode name tag
 	private $tag = 'mcw-bp-gutenberg';
 	// Namespace
