@@ -4,7 +4,7 @@ Show Gutenberg blocks only to target audience depending on their user attributes
 
 For documentation, please check:
 
-https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/
+https://www.meceware.com/docs/block-permissions-for-gutenberg/
 
 ## How To Use:
 * Activate 'Block Permissions' plugin.

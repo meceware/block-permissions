@@ -1,9 +1,9 @@
 === Block Permissions ===
 Contributors: meceware
-Donate link: https://www.meceware.com/plugins/
+Donate link: https://www.meceware.com/
 Tags: addon, blocks, content restriction, date, gutenberg, member, permission, privacy, private content, time range, user role
 Requires at least: 5.0.0
-Tested up to: 5.2.4
+Tested up to: 5.4
 Requires PHP: 5.6
 Stable tag: 1.0.6
 License: GPLv3 or later
@@ -13,7 +13,7 @@ Show Gutenberg editor blocks only to target audience depending on their user att
 
 == Description ==
 
-[Full Documentation](https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/)
+[Full Documentation](https://www.meceware.com/docs/block-permissions-for-gutenberg/)
 
 == How To Use ==
 * Activate 'Block Permissions' plugin.
@@ -66,7 +66,7 @@ No FAQ yet.
 
 == Screenshots ==
 
-Please check the [documentation](https://www.meceware.com/plugins/docs/block-permissions-for-gutenberg/) web site for all the screenshots.
+Please check the [documentation](https://www.meceware.com/docs/block-permissions-for-gutenberg/) web site for all the screenshots.
 
 == Changelog ==
 
