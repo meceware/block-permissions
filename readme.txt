@@ -5,7 +5,7 @@ Tags: addon, blocks, content restriction, date, gutenberg, member, permission, p
 Requires at least: 5.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -70,6 +70,9 @@ Please check the [documentation](https://www.meceware.com/docs/block-permissions
 
 == Changelog ==
 
+= 1.0.7 =
+* Package update and minor improvements.
+
 = 1.0.6 =
 * Package update and minor improvements.
 
@@ -93,6 +96,9 @@ Please check the [documentation](https://www.meceware.com/docs/block-permissions
 * Initial Release.
 
 == Upgrade Notice ==
+
+= 1.0.7 =
+Package update and minor improvements.
 
 = 1.0.6 =
 Package update and minor improvements.

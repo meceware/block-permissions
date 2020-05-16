@@ -19,6 +19,8 @@ import MultiSelect from 'react-select';
 import UserRoleSelect from './components/user-role';
 import UsersSelect from './components/users';
 
+import { WpEditor } from '../compatibility';
+
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 
@@ -29,7 +31,7 @@ const {
 const {
   InnerBlocks,
   InspectorControls,
-} = wp.editor;
+} = WpEditor;
 
 const {
   PanelBody,
