@@ -8,11 +8,12 @@
     "eject": "cgb-scripts eject"
   },
   "dependencies": {
-    "cgb-scripts": "1.23.0",
-    "classnames": "^2.2.6",
-    "lodash": "^4.17.15",
-    "moment": "^2.25.3",
+    "cgb-scripts": "1.23.1",
+    "classnames": "^2.3.1",
+    "fbjs": "^3.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
     "rc-datetime-picker": "^1.6.1",
-    "react-select": "^3.1.0"
+    "react-select": "^4.3.1"
   }
 }
