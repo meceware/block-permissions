@@ -72,7 +72,7 @@ registerBlockType( 'meceware/block-permissions', {
     const timeFormat = 'HH:mm';
     const dateTimeEditFormat = 'DD MMM YYYY ' + timeFormat;
     const dateTimeSaveFormat = 'YYYY/MM/DD ' + timeFormat;
-
+console.log( dateRange );
     const devicesDecoded = JSON.parse( devices );
     const dateRangeDecoded = JSON.parse( dateRange );
     const timeRangeDecoded = JSON.parse( timeRange );
@@ -173,8 +173,10 @@ registerBlockType( 'meceware/block-permissions', {
                     <DatetimePickerTrigger
                       className = ''
                       closeOnSelectDay = { false }
+                      appendToBody = { true }
                       moment = { moment( dateRangeDecoded.start, dateTimeSaveFormat ) }
                       onChange = { datetime => {
+                        console.log( datetime );
                         dateRangeDecoded.start = datetime.format( dateTimeSaveFormat );
                         setAttributes( { dateRange: JSON.stringify( dateRangeDecoded ) } );
                       } }
@@ -194,6 +196,7 @@ registerBlockType( 'meceware/block-permissions', {
                     <DatetimePickerTrigger
                       className = ''
                       closeOnSelectDay = { false }
+                      appendToBody = { true }
                       moment = { moment( dateRangeDecoded.end, dateTimeSaveFormat ) }
                       onChange = { datetime => {
                         dateRangeDecoded.end = datetime.format( dateTimeSaveFormat );
@@ -219,6 +222,7 @@ registerBlockType( 'meceware/block-permissions', {
                     <DatetimePickerTrigger
                       className = ''
                       showCalendarPicker = { false }
+                      appendToBody = { true }
                       moment = { moment( timeRangeDecoded.start, timeFormat ) }
                       onChange = { time => {
                         timeRangeDecoded.start = time.format( timeFormat );
@@ -240,6 +244,7 @@ registerBlockType( 'meceware/block-permissions', {
                     <DatetimePickerTrigger
                       className = ''
                       showCalendarPicker = { false }
+                      appendToBody = { true }
                       moment = { moment( timeRangeDecoded.end, timeFormat ) }
                       onChange = { time => {
                         timeRangeDecoded.end = time.format( timeFormat );

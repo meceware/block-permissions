@@ -2,10 +2,10 @@
 Contributors: meceware
 Donate link: https://www.meceware.com/
 Tags: addon, blocks, content restriction, date, gutenberg, member, permission, privacy, private content, time range, user role
-Requires at least: 5.0.0
-Tested up to: 5.4
+Requires at least: 5.6.0
+Tested up to: 5.8.1
 Requires PHP: 5.6
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -70,6 +70,9 @@ Please check the [documentation](https://www.meceware.com/docs/block-permissions
 
 == Changelog ==
 
+= 1.0.8 =
+* Bug fix wrt date range selection. (thanks to urlund (@codework))
+
 = 1.0.7 =
 * Package update and minor improvements.
 
@@ -96,6 +99,9 @@ Please check the [documentation](https://www.meceware.com/docs/block-permissions
 * Initial Release.
 
 == Upgrade Notice ==
+
+= 1.0.8 =
+Bug fix wrt date range selection.
 
 = 1.0.7 =
 Package update and minor improvements.

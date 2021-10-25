@@ -59,6 +59,22 @@ For development, run `npm start`.
 
 To get the release version, run `py .\release.py`. (Python v3.x is required.)
 
+## Upload
+
+```shell
+$ svn co https://plugins.svn.wordpress.org/block-permissions .
+
+# Copy updated files to trunk
+
+$ svn stat
+
+$ svn ci -m "<commit message>"
+
+$ svn cp trunk tags/1.0.8
+
+$ svn ci -m "vX.X.X"
+```
+
 ## License
 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) or later
 
